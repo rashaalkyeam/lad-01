@@ -18,7 +18,7 @@ render(){
     return(
         <div>
             <h2>{this.props.title}</h2>
-            <img onClick={this.votting} src={this.props.imge_url} alt={this.props.title}/>
+            <img onClick={this.votting} src={this.props.image_url} alt={this.props.title}/>
             <p>{this.props.descr}</p>
             <p>❤️ {this.state.vote}</p>
             
