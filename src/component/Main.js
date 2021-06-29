@@ -1,5 +1,5 @@
-import React, { component } from 'react'
-import Home from './Home'
+import React from 'react';
+import Home from './Home';
 
 class Main extends React.Component {
     render() {
@@ -25,7 +25,7 @@ class Main extends React.Component {
                 "keyword": "unicorn",
                 "horns": 1
             }
-        ]
+        ];
         return (
             <div>
                 <Home title={home[0].title} descr={home[0].descr} image_url={home[0].image_url} />
