@@ -6,8 +6,6 @@ class Home extends React.Component{
         super(props);
         this.state = {
             vote: 0
-        }
-    }
 
     votting = () => {
         this.setState({
@@ -19,13 +17,15 @@ render(){
         <div>
             <h2>{this.props.title}</h2>
             <img onClick={this.votting} src={this.props.image_url} alt={this.props.title}/>
+
+            <p>{this.props.description}</p>
+
             <p>{this.props.descr}</p>
+
             <p>❤️ {this.state.vote}</p>
             
         </div>
     );
 }
-
 }
-
 export default Home;
