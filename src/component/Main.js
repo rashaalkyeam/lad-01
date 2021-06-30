@@ -1,8 +1,13 @@
+
 import React, { component } from 'react'
 import Home from './Home'
 import Horned from './Horned.json';
 import { Form, Button } from 'react-bootstrap/';
 import FormInfoModal from './FormInfoModal';
+
+import React from 'react';
+import Home from './Home';
+
 
 class Main extends React.Component {
     constructor(props) {
@@ -28,7 +33,11 @@ class Main extends React.Component {
             showModal:true
         })}
     render() {
+
         return(
+
+    
+        return (
             <div>
                 <Form onSubmit={this.submitForm}>
                     <Form.Group aria-label="Default select example">
